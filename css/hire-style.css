@@ -82,47 +82,53 @@ header {
     background-color: #092675;
 }
 
+/* Основные стили */
+
 .hero {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-
-    margin: 5rem 24.0625rem 4.375rem 24.0625rem;
+    padding: 2rem 5vw;
+    /* Используем проценты и vw для гибкости */
+    margin: 5rem auto;
+    /* Автоматические отступы для центрирования */
 }
 
 .hero-img {
-    width: 14.75rem;
-    height: 15.75rem;
-
+    width: 100%;
+    max-width: 14.75rem;
+    /* Максимальная ширина в rem */
+    height: auto;
     margin-bottom: 2rem;
 }
 
 .hero-title {
     font-weight: 800;
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-    background: linear-gradient(45deg, #ffe600, #10fafa);
+    font-size: 2.5rem;
+    /* Меньше фиксированных значений */
+    line-height: 3rem;
+    background: linear-gradient(45deg, #0ef2d7, #89c217);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent !important;
-
     margin-bottom: 2rem;
 }
 
 .hero-links {
     display: flex;
-    gap: 3rem;
+    gap: 2rem
 }
 
 .hero-text {
     font-weight: 300;
-    font-size: 1.125rem;
-    line-height: auto;
+    font-size: 1rem;
+    line-height: 1.5rem;
     color: #C5C5C5;
-
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
+    padding: 0 2rem;
+    /* Дополнительный padding для уменьшения ширины текста */
 }
 
 .btn-hero {
@@ -136,11 +142,11 @@ header {
 }
 
 .btn-hero:hover {
-    background-color: #3baece;
+    background-color: #b73ba6;
 }
 
 .btn-hero:active {
-    background-color: #952819;
+    background-color: #ffe100;
 }
 
 footer {
@@ -178,152 +184,89 @@ footer {
 
 
 
-/* Адаптация для экранов шириной от 1000 до 1500 пикселей */
-@media (min-width: 1000px) and (max-width: 1500px) {
+/* Адаптивный дизайн */
+
+@media (max-width: 1450px) {
     .hero {
-        margin: 4rem 10rem;
-    }
-
-    .hero-img {
-        width: 13rem;
-        height: auto;
-    }
-
-    .hero-text {
-        font-size: 1.125rem;
-        margin-bottom: 3rem;
-        text-align: center;
+        padding: 2rem 10vw;
+        /* Увеличение отступов для средней ширины экрана */
     }
 
     .hero-title {
-        font-size: 1.4rem;
-        line-height: 1.7rem;
-        margin-bottom: 2rem;
+        font-size: 2rem;
+        /* Уменьшение размера шрифта на средних экранах */
+        line-height: 2.5rem;
     }
 
-    .hero-links {
-        gap: 2rem;
-    }
-
-    .btn-hero {
-        padding: 0.875rem 2rem;
-        font-size: 1rem;
-    }
-
-    .footer-container {
-        padding: 4rem 8rem;
+    .hero-text {
+        font-size: 0.875rem;
+        line-height: 1.375rem;
+        padding: 0 1rem;
+        /* Дополнительное уменьшение отступов */
     }
 }
 
-/* Адаптация для экранов шириной от 768 до 999 пикселей */
-@media (min-width: 768px) and (max-width: 999px) {
+@media (max-width: 1024px) {
     .hero {
-        margin: 3rem 5rem;
-    }
-
-    .hero-img {
-        width: 12.5rem;
-        height: auto;
-    }
-
-    .hero-text {
-        font-size: 1.05rem;
-        margin-bottom: 2.5rem;
-        text-align: center;
+        padding: 2rem 5vw;
+        /* Больше отступов на небольших экранах */
     }
 
     .hero-title {
-        font-size: 1.35rem;
-        line-height: 1.6rem;
-        margin-bottom: 1.75rem;
+        font-size: 1.75rem;
+        /* Еще меньше шрифт */
+        line-height: 2.25rem;
     }
 
-    .hero-links {
-        gap: 2rem;
-    }
-
-    .btn-hero {
-        padding: 0.875rem 1.75rem;
-        font-size: 0.95rem;
-    }
-
-    .footer-container {
-        padding: 3rem 6rem;
+    .hero-text {
+        font-size: 0.875rem;
+        line-height: 1.375rem;
     }
 }
 
-/* Адаптация для экранов шириной от 480 до 767 пикселей */
-@media (min-width: 480px) and (max-width: 767px) {
+@media (max-width: 768px) {
     .hero {
-        margin: 2.5rem 2rem;
-    }
-
-    .hero-img {
-        width: 12rem;
-        height: auto;
-    }
-
-    .hero-text {
-        font-size: 1rem;
-        margin-bottom: 2.5rem;
-        text-align: center;
+        padding: 1.5rem 5vw;
+        /* Дальнейшее уменьшение отступов */
+        margin: 2rem auto;
+        /* Меньше внешних отступов */
     }
 
     .hero-title {
-        font-size: 1.25rem;
-        line-height: 1.5rem;
-        margin-bottom: 1.5rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
     }
 
-    .hero-links {
-        flex-direction: column;
-        gap: 1.5rem;
+    .hero-text {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
     }
 
     .btn-hero {
         padding: 0.75rem 1.5rem;
         font-size: 0.875rem;
     }
-
-    .footer-container {
-        padding: 2.5rem 2rem;
-    }
 }
 
-/* Адаптация для экранов шириной до 479 пикселей */
-@media (max-width: 479px) {
+@media (max-width: 480px) {
     .hero {
-        margin: 2rem 1rem;
-    }
-
-    .hero-img {
-        width: 10rem;
-        height: auto;
-    }
-
-    .hero-text {
-        font-size: 0.9rem;
-        margin-bottom: 2rem;
-        text-align: center;
+        padding: 1rem 3vw;
+        /* Более компактный layout */
+        margin: 1.5rem auto;
     }
 
     .hero-title {
-        font-size: 1.1rem;
-        line-height: 1.3rem;
-        margin-bottom: 1.25rem;
+        font-size: 1.25rem;
+        line-height: 1.75rem;
     }
 
-    .hero-links {
-        flex-direction: column;
-        gap: 1.25rem;
+    .hero-text {
+        font-size: 0.75rem;
+        line-height: 1.125rem;
     }
 
     .btn-hero {
-        padding: 0.65rem 1.25rem;
-        font-size: 0.8rem;
-    }
-
-    .footer-container {
-        padding: 2rem 1rem;
+        padding: 0.5rem 1rem;
+        font-size: 0.75rem;
     }
 }
