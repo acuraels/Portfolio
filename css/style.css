@@ -63,9 +63,22 @@ nav {
 
 /* Основные стили*/
 
-header {
-    min-width: 75rem;
+header,
+footer {
+    width: 100%;
+    max-width: 75rem;
+    margin: 0 auto;
 }
+
+.header-container,
+.footer-container {
+    width: 100%;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+    /* Добавьте отступы, чтобы текст не прилипал к краям */
+}
+
 
 .header-container {
     background-color: #222222;
@@ -349,7 +362,6 @@ header {
 
 footer {
     background-color: #191919;
-    min-width: 75rem;
 }
 
 .footer-container {
