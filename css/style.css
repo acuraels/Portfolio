@@ -290,17 +290,18 @@ footer {
     margin: 0rem 13.125rem 0.875rem 1.4375rem;
 }
 
+/* Основные стили секции опыта */
 .experience {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 auto;
-    max-width: 75rem;
-
     padding: 0 1rem;
-    margin: 0 15rem;
+    /* Избегай фиксированных отступов */
+    margin: 4.5625rem auto;
+    max-width: 75rem;
 }
 
+/* Заголовок секции */
 .experience-title {
     font-weight: 800;
     font-size: 2.1875rem;
@@ -310,58 +311,103 @@ footer {
     background-clip: text;
     color: transparent !important;
     text-align: center;
-
     margin-bottom: 3.5625rem;
 }
 
+/* Контейнер элементов опыта */
 .experience-container {
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    /* Добавь отступы между элементами */
 }
 
+/* Элемент опыта */
 .experience-item {
-    margin-bottom: 3.125rem;
-    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1.125rem;
+    padding: 1rem;
+    width: 100%;
+    /* Задай ширину 100%, чтобы занимать доступное пространство */
+    box-sizing: border-box;
+    /* Включи padding и border в ширину элемента */
 }
 
+/* Подраздел 1 элемента опыта */
 .experience-sub-item-1 {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    /* Центрируй элементы */
+    gap: 1rem;
+    /* Добавь отступы между элементами */
+    width: 100%;
+    /* Задай ширину 100% */
 }
 
+/* Изображение опыта */
 .experience-img {
     max-width: 2.125rem;
     max-height: 2.125rem;
-
-    margin-bottom: 1.4375rem;
-    margin-right: 1rem;
 }
 
+/* Роль опыта */
 .experience-role {
-    flex-grow: 1;
     color: #fff;
     font-weight: 700;
     font-size: 1.375rem;
     line-height: auto;
-
-    margin-bottom: 1.4375rem;
-    margin-right: 26.75rem;
+    text-align: center;
+    /* Центрируй текст */
+    margin: 0.5rem 0;
+    /* Уменьши отступы для лучшего выравнивания */
 }
 
+/* Дата опыта */
 .experience-date {
     color: #C5C5C5;
     font-weight: 400;
     font-size: 0.9375rem;
     white-space: nowrap;
-
-    margin-bottom: 1.4375rem;
 }
 
+/* Текст опыта */
 .experience-text {
-    text-align: left;
+    text-align: center;
+    /* Центрируй текст */
     color: #8491A0;
     font-weight: 400;
     font-size: 0.9375rem;
+}
+
+/* Медиа-запросы для меньших экранов */
+@media (max-width: 1024px) {
+    .experience {
+        margin: 0 1rem;
+    }
+
+    .experience-item {
+        padding: 1rem;
+    }
+
+    .experience-role {
+        font-size: 1.25rem;
+        /* Уменьши размер шрифта для меньших экранов */
+    }
+}
+
+@media (max-width: 768px) {
+    .experience-role {
+        font-size: 1.125rem;
+        /* Уменьши размер шрифта еще больше для меньших экранов */
+    }
+
+    .experience-text {
+        font-size: 0.875rem;
+        /* Уменьши размер шрифта для лучшей читаемости */
+    }
 }
 
 footer {
