@@ -178,9 +178,84 @@ footer {
 
 
 
-@media (max-width: 768px) {
+/* Адаптация для экранов шириной от 1000 до 1500 пикселей */
+@media (min-width: 1000px) and (max-width: 1500px) {
     .hero {
-        margin: 2rem 1rem;
+        margin: 4rem 10rem;
+    }
+
+    .hero-img {
+        width: 13rem;
+        height: auto;
+    }
+
+    .hero-text {
+        font-size: 1.125rem;
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+        margin-bottom: 2rem;
+    }
+
+    .hero-links {
+        gap: 2rem;
+    }
+
+    .btn-hero {
+        padding: 0.875rem 2rem;
+        font-size: 1rem;
+    }
+
+    .footer-container {
+        padding: 4rem 8rem;
+    }
+}
+
+/* Адаптация для экранов шириной от 768 до 999 пикселей */
+@media (min-width: 768px) and (max-width: 999px) {
+    .hero {
+        margin: 3rem 5rem;
+    }
+
+    .hero-img {
+        width: 12.5rem;
+        height: auto;
+    }
+
+    .hero-text {
+        font-size: 1.05rem;
+        margin-bottom: 2.5rem;
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: 1.35rem;
+        line-height: 1.6rem;
+        margin-bottom: 1.75rem;
+    }
+
+    .hero-links {
+        gap: 2rem;
+    }
+
+    .btn-hero {
+        padding: 0.875rem 1.75rem;
+        font-size: 0.95rem;
+    }
+
+    .footer-container {
+        padding: 3rem 6rem;
+    }
+}
+
+/* Адаптация для экранов шириной от 480 до 767 пикселей */
+@media (min-width: 480px) and (max-width: 767px) {
+    .hero {
+        margin: 2.5rem 2rem;
     }
 
     .hero-img {
@@ -190,7 +265,7 @@ footer {
 
     .hero-text {
         font-size: 1rem;
-        margin-bottom: 2rem;
+        margin-bottom: 2.5rem;
         text-align: center;
     }
 
@@ -208,6 +283,44 @@ footer {
     .btn-hero {
         padding: 0.75rem 1.5rem;
         font-size: 0.875rem;
+    }
+
+    .footer-container {
+        padding: 2.5rem 2rem;
+    }
+}
+
+/* Адаптация для экранов шириной до 479 пикселей */
+@media (max-width: 479px) {
+    .hero {
+        margin: 2rem 1rem;
+    }
+
+    .hero-img {
+        width: 10rem;
+        height: auto;
+    }
+
+    .hero-text {
+        font-size: 0.9rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: 1.1rem;
+        line-height: 1.3rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .hero-links {
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+
+    .btn-hero {
+        padding: 0.65rem 1.25rem;
+        font-size: 0.8rem;
     }
 
     .footer-container {
