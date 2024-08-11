@@ -271,3 +271,74 @@ nav {
 
     margin: 0rem 13.125rem 0.875rem 1.4375rem;
 }
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experience-title {
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 35px;
+    background: linear-gradient(45deg, #0089ff, #ff008e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent !important;
+
+    margin-bottom: 3.5625rem;
+}
+
+.experience-container {
+    justify-content: center;
+}
+
+.experience-item {
+    margin-bottom: 3.125rem;
+    flex-wrap: wrap;
+}
+
+.experience-sub-item-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.experience-img {
+    max-width: 2.125rem;
+    max-height: 2.125rem;
+
+    margin-bottom: 1.4375rem;
+    margin-right: 1rem;
+}
+
+.experience-role {
+    flex-grow: 1;
+    color: #fff;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: auto;
+
+    margin-bottom: 1.4375rem;
+    margin-right: 26.75rem;
+}
+
+.experience-date {
+    color: #C5C5C5;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    white-space: nowrap;
+
+    margin-bottom: 1.4375rem;
+}
+
+.experience-text {
+    width: 60rem;
+    text-align: left;
+    color: #8491A0;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+}
