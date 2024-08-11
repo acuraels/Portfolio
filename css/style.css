@@ -36,6 +36,7 @@ nav {
 
 /* Кнопка*/
 
+/*
 .back-to-top {
     position: fixed;
     width: 4rem;
@@ -63,7 +64,7 @@ nav {
 /* Основные стили*/
 
 header {
-    min-width: fit-content;
+    min-width: 75rem;
 }
 
 .header-container {
@@ -348,7 +349,7 @@ header {
 
 footer {
     background-color: #191919;
-    min-width: fit-content;
+    min-width: 75rem;
 }
 
 .footer-container {
@@ -418,8 +419,48 @@ footer {
 
 /* ================================================================= */
 
-/* Адаптивные стили */
+/* Медиа-запрос для разрешений ниже 1450 пикселей */
+/* Медиа-запрос для разрешений от 1015px до 1450px */
+@media (max-width: 1450px) and (min-width: 1015px) {
 
+    /* Настройки навигационной панели */
+    nav {
+        width: 100%;
+        padding: 0 2rem;
+        box-sizing: border-box;
+    }
+
+    /* Настройки секции проектов */
+    .projects-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .project-container {
+        flex: 1 1 calc(50% - 4rem);
+        /* Две колонки с отступами */
+        max-width: calc(50% - 4rem);
+    }
+}
+
+/* Медиа-запрос для разрешений ниже 1015px */
+@media (max-width: 1015px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .projects-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+
+/* Существующие медиа-запросы */
 @media (max-width: 1024px) {
     nav {
         flex-direction: column;
