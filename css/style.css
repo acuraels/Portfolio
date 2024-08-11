@@ -63,26 +63,19 @@ nav {
 
 /* Основные стили*/
 
-header,
-footer {
+header {
     width: 100%;
     max-width: 75rem;
     margin: 0 auto;
 }
-
-.header-container,
-.footer-container {
-    width: 100%;
-    max-width: 75rem;
-    margin: 0 auto;
-    padding: 0 1rem;
-    /* Добавьте отступы, чтобы текст не прилипал к краям */
-}
-
 
 .header-container {
     background-color: #222222;
     font-family: "Plus Jakarta Sans", sans-serif;
+    width: 100%;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
 
 .nav-logo {
@@ -287,21 +280,18 @@ footer {
     line-height: 1.25rem;
     color: #fff;
 
-    margin: 0rem 13.125rem 0.875rem 1.4375rem;
+    margin: 0rem 12.125rem 0.875rem 1.4375rem;
 }
 
-/* Основные стили секции опыта */
 .experience {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0 1rem;
-    /* Избегай фиксированных отступов */
     margin: 4.5625rem auto;
     max-width: 75rem;
 }
 
-/* Заголовок секции */
 .experience-title {
     font-weight: 800;
     font-size: 2.1875rem;
@@ -314,15 +304,12 @@ footer {
     margin-bottom: 3.5625rem;
 }
 
-/* Контейнер элементов опыта */
 .experience-container {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    /* Добавь отступы между элементами */
 }
 
-/* Элемент опыта */
 .experience-item {
     display: flex;
     flex-direction: column;
@@ -330,42 +317,30 @@ footer {
     border-radius: 1.125rem;
     padding: 1rem;
     width: 100%;
-    /* Задай ширину 100%, чтобы занимать доступное пространство */
-    box-sizing: border-box;
-    /* Включи padding и border в ширину элемента */
 }
 
-/* Подраздел 1 элемента опыта */
 .experience-sub-item-1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* Центрируй элементы */
     gap: 1rem;
-    /* Добавь отступы между элементами */
     width: 100%;
-    /* Задай ширину 100% */
 }
 
-/* Изображение опыта */
 .experience-img {
     max-width: 2.125rem;
     max-height: 2.125rem;
 }
 
-/* Роль опыта */
 .experience-role {
     color: #fff;
     font-weight: 700;
     font-size: 1.375rem;
     line-height: auto;
     text-align: center;
-    /* Центрируй текст */
     margin: 0.5rem 0;
-    /* Уменьши отступы для лучшего выравнивания */
 }
 
-/* Дата опыта */
 .experience-date {
     color: #C5C5C5;
     font-weight: 400;
@@ -373,52 +348,28 @@ footer {
     white-space: nowrap;
 }
 
-/* Текст опыта */
 .experience-text {
     text-align: center;
-    /* Центрируй текст */
     color: #8491A0;
     font-weight: 400;
     font-size: 0.9375rem;
 }
 
-/* Медиа-запросы для меньших экранов */
-@media (max-width: 1024px) {
-    .experience {
-        margin: 0 1rem;
-    }
-
-    .experience-item {
-        padding: 1rem;
-    }
-
-    .experience-role {
-        font-size: 1.25rem;
-        /* Уменьши размер шрифта для меньших экранов */
-    }
-}
-
-@media (max-width: 768px) {
-    .experience-role {
-        font-size: 1.125rem;
-        /* Уменьши размер шрифта еще больше для меньших экранов */
-    }
-
-    .experience-text {
-        font-size: 0.875rem;
-        /* Уменьши размер шрифта для лучшей читаемости */
-    }
-}
-
 footer {
+    width: 100%;
+    max-width: 75rem;
+    margin: 0 auto;
     background-color: #191919;
 }
 
 .footer-container {
+    width: 100%;
+    max-width: 75rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 
+    margin: 0 auto;
     padding: 5.25rem 30rem 5.25rem 15rem;
 }
 
@@ -481,18 +432,14 @@ footer {
 
 /* ================================================================= */
 
-/* Медиа-запрос для разрешений ниже 1450 пикселей */
-/* Медиа-запрос для разрешений от 1015px до 1450px */
 @media (max-width: 1450px) and (min-width: 1015px) {
 
-    /* Настройки навигационной панели */
     nav {
         width: 100%;
         padding: 0 2rem;
         box-sizing: border-box;
     }
 
-    /* Настройки секции проектов */
     .projects-container {
         flex-direction: row;
         flex-wrap: wrap;
@@ -502,12 +449,10 @@ footer {
 
     .project-container {
         flex: 1 1 calc(50% - 4rem);
-        /* Две колонки с отступами */
         max-width: calc(50% - 4rem);
     }
 }
 
-/* Медиа-запрос для разрешений ниже 1015px */
 @media (max-width: 1015px) {
     nav {
         flex-direction: column;
@@ -522,7 +467,6 @@ footer {
 }
 
 
-/* Существующие медиа-запросы */
 @media (max-width: 1024px) {
     nav {
         flex-direction: column;
@@ -545,7 +489,15 @@ footer {
     }
 
     .experience {
-        margin: 0 3rem;
+        margin: 0 1rem;
+    }
+
+    .experience-item {
+        padding: 1rem;
+    }
+
+    .experience-role {
+        font-size: 1.25rem;
     }
 
     .footer-container {
@@ -586,6 +538,14 @@ footer {
 
     .footer-container {
         padding: 2rem 1rem;
+    }
+
+    .experience-role {
+        font-size: 1.125rem;
+    }
+
+    .experience-text {
+        font-size: 0.875rem;
     }
 }
 
