@@ -415,3 +415,137 @@ footer {
 
     margin-top: 1.09375rem;
 }
+
+/* ================================================================= */
+
+/* Адаптивные стили */
+
+@media (max-width: 1024px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hero {
+        margin: 3rem 2rem;
+    }
+
+    .projects-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .experience {
+        margin: 0 3rem;
+    }
+
+    .footer-container {
+        padding: 3rem 2rem;
+    }
+
+    .footer-text {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 1rem;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    .hero-text {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .hero {
+        margin: 2rem 1rem;
+    }
+
+    .projects {
+        margin: 0rem 1rem 3rem 1rem;
+    }
+
+    .experience {
+        margin: 0 1rem;
+    }
+
+    .footer-container {
+        padding: 2rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-logo {
+        max-width: 80px;
+    }
+
+    .nav-links {
+        gap: 0.5rem;
+    }
+
+    .link a {
+        font-size: 0.8rem;
+    }
+
+    .btn-nav {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.875rem;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    .hero-text {
+        font-size: 0.875rem;
+        line-height: 1.375rem;
+    }
+
+    .btn-hero {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.875rem;
+    }
+
+    .projects-title,
+    .experience-title {
+        font-size: 1.5rem;
+    }
+
+    .project-img,
+    .experience-img {
+        max-width: 100%;
+    }
+
+    .project-container h3,
+    .project-container p,
+    .experience-role {
+        font-size: 1rem;
+    }
+
+    .footer-container {
+        padding: 1.5rem;
+    }
+
+    .footer-text,
+    .email-text,
+    .copyright-text {
+        font-size: 0.75rem;
+    }
+
+    .footer-links {
+        gap: 0.5rem;
+    }
+}
