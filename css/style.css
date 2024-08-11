@@ -181,8 +181,6 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    text-align: center;
 }
 
 .skills-title {
@@ -200,7 +198,6 @@ nav {
 .skills-imgs {
     display: flex;
     list-style: none;
-    align-items: center;
     gap: 3rem;
 
     margin-bottom: 6.3125rem;
@@ -229,8 +226,9 @@ nav {
 }
 
 .projects-container {
+    justify-content: center;
     display: flex;
-    gap: 6.875rem
+    gap: 1.875rem
 }
 
 .project-container {
@@ -238,9 +236,22 @@ nav {
     border-radius: 18px;
 }
 
+.project-container a {
+    display: block;
+    overflow: hidden;
+    border-radius: 18px;
+}
+
 .project-img {
     max-width: 24.375rem;
     max-height: 14.6875rem;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-container a:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .project-container h3 {
