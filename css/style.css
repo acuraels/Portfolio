@@ -448,6 +448,18 @@ footer {
         flex: 1 1 calc(50% - 4rem);
         max-width: calc(50% - 4rem);
     }
+
+    .project-container h3 {
+        font-size: 0.6rem;
+        line-height: 1.5rem;
+        margin: 0.5rem 1rem 0.25rem 1rem;
+    }
+
+    .project-container p {
+        font-size: 0.75rem;
+        line-height: 1.5rem;
+        margin: 0.25rem 1rem 0.5rem 1rem;
+    }
 }
 
 @media (max-width: 1015px) {
