@@ -226,6 +226,7 @@ footer {
     }
 
     .hero-text {
+        width: 20rem;
         font-size: 0.875rem;
         line-height: 1.375rem;
     }
@@ -245,6 +246,7 @@ footer {
     }
 
     .hero-text {
+        width: 20rem;
         font-size: 0.875rem;
         line-height: 1.25rem;
     }
