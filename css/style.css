@@ -162,7 +162,7 @@ header {
 .hero-text {
     font-weight: 300;
     font-size: 1.125rem;
-    line-height: auto;
+    line-height: 2rem;
     color: #C5C5C5;
 
     margin-bottom: 4rem;
@@ -347,6 +347,8 @@ header {
 }
 
 .experience-text {
+    width: 50rem;
+    line-height: 2rem;
     text-align: center;
     color: #8491A0;
     font-weight: 400;
@@ -485,7 +487,7 @@ footer {
     }
 
     .experience {
-        margin: 0 1rem;
+        width: 50rem;
     }
 
     .experience-item {
