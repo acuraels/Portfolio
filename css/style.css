@@ -490,6 +490,10 @@ footer {
         width: 10rem;
     }
 
+    .project-container p {
+        width: 12rem;
+    }
+
     .experience {
         margin: 0 1rem;
     }
