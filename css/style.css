@@ -162,7 +162,7 @@ header {
 .hero-text {
     font-weight: 300;
     font-size: 1.125rem;
-    line-height: 2rem;
+    line-height: 2.5rem;
     color: #C5C5C5;
 
     margin-bottom: 4rem;
@@ -201,7 +201,7 @@ header {
     background-clip: text;
     color: transparent !important;
 
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     margin-top: 2rem;
 }
 
@@ -210,7 +210,7 @@ header {
     list-style: none;
     gap: 3rem;
 
-    margin-bottom: 6.3125rem;
+    margin-bottom: 5rem;
 }
 
 .skills-img {
@@ -351,6 +351,7 @@ header {
 
 .experience-text {
     text-align: center;
+    line-height: 1.5rem;
     color: #8491A0;
     font-weight: 400;
     font-size: 0.9375rem;
