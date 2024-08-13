@@ -201,7 +201,8 @@ header {
     background-clip: text;
     color: transparent !important;
 
-    margin-bottom: 2.875rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 .skills-imgs {
@@ -231,7 +232,7 @@ header {
     color: transparent !important;
     text-align: center;
 
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
 }
 
 .projects-container {
