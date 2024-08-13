@@ -189,12 +189,10 @@ footer {
 @media (max-width: 1450px) {
     .hero {
         padding: 2rem 10vw;
-        /* Увеличение отступов для средней ширины экрана */
     }
 
     .hero-title {
         font-size: 2rem;
-        /* Уменьшение размера шрифта на средних экранах */
         line-height: 2.5rem;
     }
 
@@ -202,7 +200,6 @@ footer {
         font-size: 0.875rem;
         line-height: 1.375rem;
         padding: 0 1rem;
-        /* Дополнительное уменьшение отступов */
     }
 }
 
@@ -216,12 +213,10 @@ footer {
 @media (max-width: 1024px) {
     .hero {
         padding: 2rem 5vw;
-        /* Больше отступов на небольших экранах */
     }
 
     .hero-title {
         font-size: 1.75rem;
-        /* Еще меньше шрифт */
         line-height: 2.25rem;
     }
 
@@ -235,9 +230,7 @@ footer {
 @media (max-width: 768px) {
     .hero {
         padding: 1.5rem 5vw;
-        /* Дальнейшее уменьшение отступов */
         margin: 2rem auto;
-        /* Меньше внешних отступов */
     }
 
     .hero-title {
@@ -274,7 +267,6 @@ footer {
 
     .hero {
         padding: 1rem 3vw;
-        /* Более компактный layout */
         margin: 1.5rem auto;
     }
 
