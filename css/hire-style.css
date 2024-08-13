@@ -206,6 +206,13 @@ footer {
     }
 }
 
+@media (min-width: 1024px) {
+    .hero-text {
+        line-height: 1.5rem;
+        width: 50rem;
+    }
+}
+
 @media (max-width: 1024px) {
     .hero {
         padding: 2rem 5vw;
@@ -255,6 +262,10 @@ footer {
         line-height: 1.5rem;
     }
 
+    .btn-nav {
+        padding: 0.5rem 1rem;
+    }
+
     .hero {
         padding: 1rem 3vw;
         /* Более компактный layout */
@@ -269,6 +280,7 @@ footer {
     .hero-text {
         font-size: 0.75rem;
         line-height: 1.125rem;
+        width: 30rem;
     }
 
     .btn-hero {
@@ -278,5 +290,13 @@ footer {
 
     .footer-container {
         padding: 1rem 2rem;
+    }
+
+    .footer-title {
+        font-size: 1rem;
+    }
+
+    .copyright-text {
+        font-size: 0.75rem;
     }
 }
