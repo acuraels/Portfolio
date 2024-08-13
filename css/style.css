@@ -438,6 +438,10 @@ footer {
         box-sizing: border-box;
     }
 
+    .projects {
+        margin: 0 5rem;
+    }
+
     .projects-container {
         flex-direction: row;
         flex-wrap: wrap;
@@ -479,6 +483,11 @@ footer {
 
     .hero {
         margin: 3rem 2rem;
+    }
+
+    .projects {
+        margin: 0 13rem;
+        margin-bottom: 4rem;
     }
 
     .projects-container {
