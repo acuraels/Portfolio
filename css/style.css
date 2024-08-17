@@ -474,6 +474,10 @@ footer {
     .experience {
         width: 50rem;
     }
+
+    .hero-img {
+        margin-bottom: 3rem;
+    }
 }
 
 @media (max-width: 1024px) {
