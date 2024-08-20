@@ -546,6 +546,10 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .back-to-top {
+        display: none;
+    }
+
     nav {
         padding: 1rem;
     }
