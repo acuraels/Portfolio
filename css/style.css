@@ -36,7 +36,7 @@ nav {
 
 /* Кнопка*/
 
-/*
+
 .back-to-top {
     position: fixed;
     width: 4rem;
@@ -436,7 +436,6 @@ footer {
 
     nav {
         width: 100%;
-        padding: 0 2rem;
         box-sizing: border-box;
     }
 
@@ -478,6 +477,12 @@ footer {
     .hero-img {
         margin-bottom: 3rem;
     }
+
+    .back-to-top {
+        width: 4.5rem;
+
+        padding-bottom: 1.25rem;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -508,6 +513,11 @@ footer {
 
     .project-title {
         width: 10rem;
+    }
+
+    .project-img,
+    .experience-img {
+        max-width: 100%;
     }
 
     .project-container p {
@@ -560,6 +570,11 @@ footer {
 
     .projects {
         margin: 0rem 1rem 3rem 1rem;
+    }
+
+    .project-img,
+    .experience-img {
+        max-width: 100%;
     }
 
     .experience {
@@ -615,6 +630,12 @@ footer {
     .btn-hero {
         padding: 0.75rem 1.5rem;
         font-size: 0.875rem;
+    }
+
+    .back-to-top {
+        width: 4.5rem;
+        height: 3rem;
+        padding-bottom: 3.5rem;
     }
 
     .projects-title,
