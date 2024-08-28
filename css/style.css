@@ -474,6 +474,10 @@ footer {
         width: 50rem;
     }
 
+    .project-img {
+        max-width: 100%;
+    }
+
     .hero-img {
         margin-bottom: 3rem;
     }
@@ -515,8 +519,7 @@ footer {
         width: 10rem;
     }
 
-    .project-img,
-    .experience-img {
+    .project-img {
         max-width: 100%;
     }
 
