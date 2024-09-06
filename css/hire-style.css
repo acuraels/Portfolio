@@ -126,6 +126,8 @@ header {
     font-size: 1rem;
     line-height: 1.5rem;
     color: #C5C5C5;
+    text-align: justify;
+
     margin-bottom: 3rem;
     padding: 0 2rem;
     /* Дополнительный padding для уменьшения ширины текста */
@@ -208,6 +210,10 @@ footer {
         line-height: 1.5rem;
         width: 50rem;
     }
+
+    .footer-container {
+        padding: 5.25rem 30rem 5.25rem 11rem;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -254,6 +260,12 @@ footer {
     }
 }
 
+@media (min-width: 480px) {
+    .footer-container {
+        padding: 5.25rem 0rem 5.25rem 2rem;
+    }
+}
+
 @media (max-width: 480px) {
 
     .text-nav {
@@ -262,7 +274,7 @@ footer {
     }
 
     .btn-nav {
-        padding: 0.5rem 1rem;
+        padding: 0.75rem 1.5rem;
     }
 
     .hero {
