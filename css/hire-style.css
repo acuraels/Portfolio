@@ -212,7 +212,7 @@ footer {
     }
 
     .footer-container {
-        padding: 5.25rem 30rem 5.25rem 11rem;
+        padding: 5.25rem 0rem 5.25rem 11rem !important;
     }
 }
 
