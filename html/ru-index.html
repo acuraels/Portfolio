@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Портфолио">
+    <meta name="author" content="Daniil Ustinov">
+    <link rel="icon" href="../img/image 6.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/ru-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Портфолио</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <nav class="header-nav">
+
+                <div class="title">
+                    <div class="burger-menu" onclick="toggleMenu()">
+                        <div class="burger-line"></div>
+                        <div class="burger-line"></div>
+                        <div class="burger-line"></div>
+                    </div>
+                    <div class="dropdown-menu">
+                        <a href="../index.html">English</a>
+                        <a href="../html/ru-index.html">Русский</a>
+                    </div>
+                </div>
+
+                <ul class="nav-links">
+                    <li class="link">
+                        <a href="#about-me">Обо мне</a>
+                    </li>
+                    <li class="link">
+                        <a href="#my-skills">Навыки</a>
+                    </li>
+                    <li class="link">
+                        <a href="#my-projects">Проекты</a>
+                    </li>
+                    <li class="link">
+                        <a href="#my-experience">Опыт</a>
+                    </li>
+                    <li class="link">
+                        <a href="#contact">Контакты</a>
+                    </li>
+                </ul>
+
+                <a class="btn-nav" href="../html/ru-hire.html">Нанять меня</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero" id="about-me">
+            <img class="hero-img" src="../img/me.png" alt="Я">
+
+            <h1 class="hero-title">Привет, меня зовут Даниил!</h1>
+
+            <p class="hero-text">Я начинающий фронтенд-разработчик. Имею опыто работы с языками Python и C#. В настоящее
+                время активно изучаю JavaScript. Написал игру на Windows Forms. Создал три статических сайта с приятным
+                интерфейсом. В настоящее время студент УрФУ, моя цель — стать Full-Stack веб-разработчиком. Мой уровень
+                английского — B2-C1.</p>
+
+            <a class="btn-hero" href="https://github.com/acuraels" target="_blank">Посмотреть мой GitHub</a>
+        </section>
+
+        <a href="#" class="back-to-top">↑</a>
+
+        <section class="skills" id="my-skills">
+            <h2 class="skills-title">ИМЕЮ ОПЫТ РАБОТЫ С</h2>
+
+            <ul class="skills-imgs">
+                <li>
+                    <img class="skills-img" src="../img/html.svg" alt="HTML">
+                </li>
+                <li>
+                    <img class="skills-img" src="../img/css.svg" alt="CSS">
+                </li>
+                <li>
+                    <img class="skills-img" src="../img/javascript.svg" alt="JavaScript">
+                </li>
+            </ul>
+        </section>
+
+        <section class="projects" id="my-projects">
+            <h2 class="projects-title">МОИ ПРОЕКТЫ</h2>
+
+            <div class="projects-container">
+                <div class="project-container">
+                    <a href="https://acuraels.github.io/SailClubProject/">
+                        <img class="project-img" src="../img/image 3.png" alt="Яхт-клуб">
+                    </a>
+                    <h3 class="project-title">НАЖМИТЕ, ЧТОБЫ ПОСЕТИТЬ</h3>
+                    <p class="project-text">ЯХТ-КЛУБ</p>
+                </div>
+
+                <div class="project-container">
+                    <a href="https://acuraels.github.io/SwedishButter/">
+                        <img class="project-img" src="../img/image 4.png" alt="Шведский бальзам">
+                    </a>
+                    <h3 class="project-title">НАЖМИТЕ, ЧТОБЫ ПОСЕТИТЬ</h3>
+                    <p class="project-text">ШВЕДСКИЙ БАЛЬЗАМ</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="experience" id="my-experience">
+            <h2 class="experience-title">МОЙ ОПЫТ</h2>
+
+            <div class="experience-container">
+                <div class="experience-item">
+                    <div class="experience-sub-item-1">
+                        <img class="experience-img" src="../img/image 5.svg" alt="УрФУ">
+                        <h3 class=" experience-role">Геймдизайнер</h3>
+                        <p class="experience-date">Сент. 2024 - Янв. 2024</p>
+                    </div>
+
+                    <div class="experience-sub-item-2">
+                        <p class="experience-text">В качестве геймдизайнера в университетской команде я
+                            концептуализировал и разрабатывал игровые механики для визуальной новеллы. Работал с
+                            дизайнерами и программистами над созданием увлекательных сюжетов и интерактивных элементов,
+                            обеспечивая плавный пользовательский опыт, который захватывал аудиторию.</p>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-sub-item-1">
+                        <img class="experience-img" src="../img/image 5.svg" alt="УрФУ">
+                        <h3 class=" experience-role">Тимлид</h3>
+                        <p class="experience-date">Февр. 2024 - Июнь 2024</p>
+                    </div>
+
+                    <div class="experience-sub-item-2">
+                        <p class="experience-text">Руководил студенческой командой по разработке веб-приложения,
+                            предназначенного для помощи студентам в управлении курсами. Координировал разработку
+                            фронтенда, дизайна и аналитики, реализовывал сроки проекта и обеспечивал эффективное
+                            взаимодействие между членами команды, что привело к созданию удобной платформы.</p>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-sub-item-1">
+                        <img class="experience-img" src="../img/image 6.svg" alt="УрФУ">
+                        <h3 class=" experience-role">Фронтенд-разработчик</h3>
+                        <p class="experience-date">Июль 2024 - Наст. время</p>
+                    </div>
+
+                    <div class="experience-sub-item-2">
+                        <p class="experience-text">Как самоучка фронтенд-разработчик, я специализируюсь на создании
+                            адаптивных и визуально привлекательных веб-интерфейсов. Я сосредоточен на совершенствовании
+                            навыков в HTML5, CSS3 и JavaScript, построил несколько статических веб-страниц и продолжаю
+                            расширять свои навыки, чтобы стать профессиональным Full-Stack разработчиком. Планирую
+                            изучить стек MERN и присоединиться к университетской команде в предстоящем проекте.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container" id="contact">
+            <h2 class="footer-title">Контакты</h2>
+
+            <p class="footer-text">Если у вас есть желание связаться, не стесняйтесь! Я всегда открыт для обсуждения
+                новых возможностей, сотрудничества или просто обмена идеями. Вы можете связаться со мной через ссылки
+                ниже. Жду вашего сообщения!</p>
+
+            <div class="footer-email">
+                <a href="mailto:Ustinov.Daniil@urfu.me">
+                    <img class="email-icon" src="../img/Email Icon.svg" alt="Почтовый ящик">
+                </a>
+                <p class="email-text">Ustinov.Daniil@urfu.me</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="https://t.me/acuraels">
+                    <img class="icon" src="../img/Vector.svg" alt="Телеграм">
+                </a>
+                <a href="https://vk.com/acuraels">
+                    <img class="icon" src="../img/Vector (1).svg" alt="ВКонтакте">
+                </a>
+            </div>
+
+            <div class="copyright">
+                <p class="copyright-text">Created by Daniil Ustinov 2024 ©</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
