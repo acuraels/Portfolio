@@ -105,11 +105,11 @@ header {
     bottom: 0;
     left: 0;
     background-color: #1d4ed8;
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
 }
 
 .link a:hover::after {
-    width: 70%;
+    width: 80%;
 }
 
 .btn-nav {
@@ -164,6 +164,7 @@ header {
     font-size: 1.125rem;
     line-height: 2.5rem;
     color: #C5C5C5;
+    text-align: justify;
 
     margin-bottom: 4rem;
 }
@@ -321,11 +322,12 @@ header {
 .experience-sub-item-1 {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 1rem;
     width: 100%;
 
     margin-bottom: 1rem;
+    padding-right: 1rem;
 }
 
 .experience-img {
@@ -350,7 +352,7 @@ header {
 }
 
 .experience-text {
-    text-align: center;
+    text-align: justify;
     line-height: 1.5rem;
     color: #8491A0;
     font-weight: 400;
@@ -657,7 +659,11 @@ footer {
     }
 
     .experience-role {
-        font-size: 1rem;
+        font-size: 0.8rem;
+    }
+
+    .experience-date {
+        font-size: 0.75rem;
     }
 
     .project-container p {
